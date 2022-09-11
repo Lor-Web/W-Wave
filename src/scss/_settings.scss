@@ -17,8 +17,23 @@ body {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   max-width: 1110px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include big-desktop {
+    max-width: 824px;
+  }
+
+  @include tablet {
+    max-width: 540px;
+  }
+
+  @include mobile {
+    padding: 0 32px;
+    max-width: 100%;
+  }
 }
 
 .item-link {

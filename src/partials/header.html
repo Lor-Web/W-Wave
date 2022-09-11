@@ -1,4 +1,28 @@
 <header class="header">
+  <div class="header__bar">
+    <div class="container">
+      <picture>
+        <source
+          srcset="../img/logo/logo_tablet.png"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="../img/logo/logo_small-tablet.png"
+          media="(min-width: 769px)"
+        />
+        <source
+          srcset="../img/logo/logo_mobile.png"
+          media="(min-width: 320px)"
+        />
+        <img
+          class="header__bar_logo"
+          src="../img/logo/logo_default.png"
+          alt="w-wave logo"
+        />
+      </picture>
+      <button class="header__bar_login">Вход</button>
+    </div>
+  </div>
   <div class="header_top">
     <div class="container header_container">
       <picture>
@@ -21,6 +45,11 @@
         />
       </picture>
       <nav class="header__menu">
+        <button class="header__menu__burger">
+          <span class="header__menu__burger_hr"></span
+          ><span class="header__menu__burger_hr"></span
+          ><span class="header__menu__burger_hr"></span>
+        </button>
         <ul class="header__menu__list">
           <li class="header__menu__list_item">
             <a href="#" class="item-link">Подкасты</a>
@@ -92,6 +121,25 @@
             <a href="#" class="item-link">Реклама</a>
           </li>
         </ul>
+        <button class="header__navbar_more">
+          <div class="header__navbar_more_icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
+              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
+              <path
+                d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          Что в эфире?
+        </button>
       </nav>
       <div class="header__live" tabindex="0">
         <div class="header__live_icon">
