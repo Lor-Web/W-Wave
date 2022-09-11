@@ -13,10 +13,38 @@ body {
   font-family: "Muller", sans-serif;
   min-width: 320px;
   min-height: 100%;
+  color: $base;
 }
 
 .container {
   margin: auto;
+  max-width: 1110px;
+}
+
+.item-link {
+  color: $base;
+  outline-color: $primary-light;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in,
+    outline 0.2s ease-in;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $white;
+    background-color: $primary-light;
+    outline: 2px solid $primary-light;
+    outline-offset: inherit;
+    border: none;
+  }
+
+  &:active {
+    color: $primary-dark;
+    background-color: transparent;
+    outline: none;
+  }
 }
 
 // .is-hidden {
@@ -70,4 +98,15 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+html {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
 }
