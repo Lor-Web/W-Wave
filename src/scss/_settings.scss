@@ -37,7 +37,7 @@ body {
 }
 
 .item-link {
-  color: $base;
+  color: inherit;
   outline-color: $primary-light;
   transition: color 0.2s ease-in, background-color 0.2s ease-in,
     outline 0.2s ease-in;
@@ -60,6 +60,12 @@ body {
     background-color: transparent;
     outline: none;
   }
+}
+
+.section_title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
 }
 
 // .is-hidden {
