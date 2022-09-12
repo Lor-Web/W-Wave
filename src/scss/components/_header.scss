@@ -42,7 +42,7 @@
         right: 0;
         width: 46px;
         height: 60px;
-        background-image: url("../../img/limitation.png");
+        background-image: url("../img/limitation.png");
         @include bg-cover;
 
         @include big-desktop {
